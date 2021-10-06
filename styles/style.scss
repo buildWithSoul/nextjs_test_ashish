@@ -25,9 +25,6 @@ header{
     .logo{
         &__content{
             display: block;
-            img{
-                width: 150px;
-            }
         }
     }
     div#navbarBasicExample{
@@ -40,7 +37,8 @@ header{
                 color: #000;
                 transition: all 0.3s;
                 position: relative;
-                &::before{
+                margin: 0px 7px;
+                &::before{  
                     content: "";
                     background: #1ACEDF;
                     border-radius: 3px;
@@ -70,6 +68,8 @@ header{
         font-weight: bold;
         font-size: 18px;
         line-height: 22px;
+        padding-left: 29px;
+        padding-right: 29px;
         &:hover{
             color: #fff;
             border-color:var(--main-color-one  );
@@ -121,7 +121,7 @@ header{
             border-radius: 5px;
             background: transparent;
             padding: 0px 60px 0px 20px;
-            height: 60px;
+            height: 75px;
             color: #000;
             color: #fff;
             font-weight: bold;
@@ -138,7 +138,7 @@ header{
             }
          }
          button{
-            height: 60px;
+            height: 75px;
             background: #2565AE;
             box-shadow: 1px 1px 15px rgba(140, 140, 140, 0.25);
             border-radius: 5px;
@@ -151,6 +151,10 @@ header{
             display: block;
             margin-left: -60px;
             cursor: pointer;
+            transition: all 0.3s;
+            &:hover{
+                background-color: #3f7bbf;
+            }
          }
      }
    }
@@ -212,6 +216,7 @@ header{
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 15px;
+    line-height: 1.4;
     text-align: center;
     @media screen and (max-width: 768px) {       
         font-size: 14px;
@@ -258,8 +263,12 @@ header{
         background-color: var(--main-color-one);
         border-radius: 3px;
         padding: 0 40px;
-        &:hover {
-            background-color: darken(#1ACEDF, $amount: 5%);
+        &:hover{
+            color: #fff;
+            box-shadow: 0 20px 38px rgba(37,101,174,.16)!important;
+            -ms-transform: translateY(-3px);
+            transform: translateY(-3px);
+            -webkit-transform: translateY(-3px);
         }
     }
     &-secondary {
@@ -267,6 +276,13 @@ header{
         color: #fff;
         border-radius: 3px;
         padding: 0 40px;
+        &:hover{
+            color: #fff;
+            box-shadow: 0 20px 38px rgba(37,101,174,.16)!important;
+            -ms-transform: translateY(-3px);
+            transform: translateY(-3px);
+            -webkit-transform: translateY(-3px);
+        }
     }
 }
 
@@ -325,6 +341,7 @@ header{
 // about start
 .about{
     padding-bottom: 35px;
+    padding-top: 40px;
     .section-title{
         justify-content: flex-start;
     }
@@ -619,7 +636,6 @@ header{
             order: 1;
         }
     }
-
     // waterAccess start
     section.waterAccess{
         .columns,
@@ -643,7 +659,7 @@ header{
         .btn-primary{
             padding: 0 20px;
             font-size: 16px;
-            height: 54px;
+            height: 54px; 
             span{
                 display:none;
             }
@@ -1026,6 +1042,9 @@ header{
 
 //media
 @media screen and (max-width:770px){
+    .water-access-container{
+        margin-top: 30px;
+    }
     .footer{
         .columns{
             margin-left: 0;
@@ -1184,6 +1203,12 @@ header{
     }
 }
 @media (min-width:1216px) and (max-width:1599px){
+    .herobanner{
+        .heart-img{
+            left: -70px;
+            max-width: 170px;
+        }
+    }
     .footer{
         .columns{
             .footer-column-first{
@@ -1208,6 +1233,14 @@ header{
                     }
                 }
             }
+        }
+    }
+}
+@media (min-width:1600px) and (max-width:1699px){
+    .herobanner {
+        .heart-img{
+            left: -70px;
+            max-width: 200px;
         }
     }
 }
