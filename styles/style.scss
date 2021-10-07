@@ -1,5 +1,5 @@
 @import '~bulma/bulma';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 
 *{
     padding:0;
@@ -22,6 +22,12 @@ body{
 // header start
 header{
     padding: 15px 0px;
+    .columns{
+        align-items: center;
+        .custome-nav{
+            padding-top: 0px;
+        }
+    }
     .logo{
         &__content{
             display: block;
@@ -44,8 +50,8 @@ header{
                     border-radius: 3px;
                     width: 0%;
                     position: absolute;
-                    bottom: 0;
-                    height: 5px;
+                    bottom: -8px;
+                    height: 7px;
                     left: 50%;
                     transform: translateX(-50%);
                     transition: all 0.3s;
@@ -70,7 +76,9 @@ header{
         line-height: 22px;
         padding-left: 29px;
         padding-right: 29px;
+        transition: all 0.3s;
         &:hover{
+            opacity: 0.8;
             color: #fff;
             border-color:var(--main-color-one  );
         }
@@ -139,6 +147,7 @@ header{
          }
          button{
             height: 75px;
+            letter-spacing: 1px;
             background: #2565AE;
             box-shadow: 1px 1px 15px rgba(140, 140, 140, 0.25);
             border-radius: 5px;
@@ -325,9 +334,14 @@ header{
         justify-content: space-between;
         margin-bottom: 10px;
         margin-top: 15px;
+        .btn{
+            line-height: 23px;
+            padding: 10px !important;
+        }
     }
 }
 .corporation-btn{
+    justify-content: flex-end;
     .ml-4{
         padding-top: 8px;
     }
@@ -483,8 +497,10 @@ header{
        // header start
        header{
         .columns{
-            margin: 0;
+            margin-left: 0;
+            margin-right: 0;
             .custome-nav{
+                padding-top: 0;
                 .navbar{
                     display: flex;
                     justify-content: flex-end;
@@ -568,7 +584,7 @@ header{
                     border: 2px solid #FFFFFF;
                     height: 41px;
                     font-size: 12px;
-                    padding: 0px 34px 0px 20px;
+                    padding: 0px 41px 0px 16px;
                     &::placeholder{
                         font-size: 12px;
                     }
@@ -607,6 +623,7 @@ header{
             justify-content: center;
         }
         .about-text-box {
+            margin-top: 20px !important;
             p{
                 font-size: 12px;
                 line-height: 24px;
@@ -679,6 +696,7 @@ header{
         }
         .waterAccess-title {
             padding-bottom: 43px;
+            margin-top: 30px !important;
         }
     }
     
@@ -891,6 +909,7 @@ header{
 
     // HeroBanner start
     section.about{
+        padding-bottom: 0;
         .column,
         .columns{
             margin: 0;
@@ -1167,6 +1186,16 @@ header{
     }
 }
 @media (min-width:1024px) and (max-width:1215px){
+    .herobanner{
+        .bulb-img{
+            max-width: 150px;
+        }
+        .heart-img{
+            bottom: 40px;
+            left: -90px;
+            max-width: 190px;
+        }
+    }
     .footer{
         font-size: 17px;
         .columns{
@@ -1203,6 +1232,13 @@ header{
     }
 }
 @media (min-width:1216px) and (max-width:1599px){
+    .herobanner{
+        .bulb-img{
+            top: 20px;
+            left: -60px;
+            max-width: 170px;
+        }
+    }
     .herobanner{
         .heart-img{
             left: -70px;
@@ -1348,6 +1384,7 @@ header{
 }
 @media screen and (max-width:770px){
     .subscribe-our-sec{
+        margin-top: 50px;
        .columns{
        .inner-subscribe{
            img{

@@ -20,10 +20,10 @@ const About = () => {
                         <div className="abuot-tex">
                             <h2 className="section-title">
                                 <span className="section-title__dot"></span>
-                                <div className="section-title__text">Water access flyway</div>
+                                <div className="section-title__text">Why give with us?</div>
                                 <span className="section-title__line"></span>
                             </h2>
-                            <div className="is-flex about-text-box mt-5" >
+                            <div className="is-flex about-text-box mt-6" >
                                 <div className="about-img-set" >
                                     <Image src={check} alt="" />
                                 </div>
@@ -47,7 +47,7 @@ const About = () => {
                                 <div className="section-title__text">How We Do it</div>
                                 <span className="section-title__line"></span>
                             </h2>
-                            <div className="is-flex about-text-box mt-5" >
+                            <div className="is-flex about-text-box mt-6" >
                                 <div className="about-img-set" >
                                     <Image src={check} alt="" />
                                 </div>

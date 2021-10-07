@@ -10,7 +10,7 @@ const WaterAccess = () => {
     return (
         <section className="waterAccess" >
             <div className="container">
-            <div className="is-flex mt-5 mb-2 is-align-content-center is-justify-content-center is-flex-direction-column waterAccess-title">
+            <div className="is-flex mt-6 mb-3 is-align-content-center is-justify-content-center is-flex-direction-column waterAccess-title">
                 <h2 className="section-title">
                     <span className="section-title__dot"></span>
                     <div className="section-title__text">Water access flyway</div>
